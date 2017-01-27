@@ -1,0 +1,3 @@
+com\wo\rest\bean\Contact.class
+com\wo\rest\service\ContactService.class
+com\wo\rest\controller\ContactController.class
