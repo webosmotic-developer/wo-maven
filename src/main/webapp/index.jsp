@@ -26,16 +26,24 @@
 <body ng-app="contactsApp">
 	<div class="container-fluid" ng-controller="MainCtrl">
 		<div class=row ng-init="fnInitContacts()">
-			<nav role="navigation" class="col-sm-12 navbar navbar-default navbar-fixed-top">
-				<div class="navbar-header">
-        			<a href="http://www.webosmotic.com">
-        				<img class="img-responsive" src="resources/images/logo.png"/>
-        			</a>
-    			</div>
-			    <ul class="nav navbar-nav navbar-right">
-			        <li><a href="http://www.webosmotic.com/examples"><strong>Back</strong></a></li>
-			    </ul>
-			</nav>
+			<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			        <a href="http://www.webosmotic.com"><img class="img-responsive" src="resources/images/logo.png"/></a>
+			    </div>
+			    <!-- Collection of nav links and other content for toggling -->
+			    <div id="navbarCollapse" class="collapse navbar-collapse m-r-10">
+			        <ul class="nav navbar-nav navbar-right">
+			            <li><a href="http://www.webosmotic.com/examples"><strong>Back</strong></a></li>
+			        </ul>
+			    </div>
+			</nav>			
 			<div class="container m-t-65">
 				<div class="page-header">
     				<h3>Manage Contacts</h3>      
@@ -103,22 +111,17 @@
 	</div>
 	<div class="preloader"><div class="loader"></div></div>
 	<!--  START : Vendor -->
-	<script type="text/javascript"
-		src="resources/cdn/jquery/3.0.0/jquery.min.js"></script>
-	<script type="text/javascript"
-		src="resources/cdn/toastr/2.1.3/toastr.min.js"></script>
-	<script type="text/javascript"
-		src="resources/cdn/angular/1.5.5/angular.min.js"></script>
-	<script type="text/javascript"
-		src="resources/cdn/angular/1.5.5/angular-resource.min.js"></script>
-	<script type="text/javascript"
-		src="resources/cdn/angular-ui-grid/4.0.2/ui-grid.min.js"></script>
+	<script type="text/javascript" src="resources/cdn/jquery/3.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/cdn/bootstrap/3.3.7/bootstrap.min.js"></script>
+	<script type="text/javascript" src="resources/cdn/toastr/2.1.3/toastr.min.js"></script>
+	<script type="text/javascript" src="resources/cdn/angular/1.5.5/angular.min.js"></script>
+	<script type="text/javascript" src="resources/cdn/angular/1.5.5/angular-resource.min.js"></script>
+	<script type="text/javascript" src="resources/cdn/angular-ui-grid/4.0.2/ui-grid.min.js"></script>
 	<!--  END : Vendor -->
 
 	<!--  START : Custom -->
 	<script type="text/javascript" src="resources/js/app.js"></script>
-	<script type="text/javascript"
-		src="resources/js/controller/mainCtrl.js"></script>
+	<script type="text/javascript" src="resources/js/controller/mainCtrl.js"></script>
 	<!--  END : Custom -->
 </body>
 </html>
