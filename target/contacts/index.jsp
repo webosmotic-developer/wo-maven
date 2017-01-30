@@ -40,7 +40,7 @@
 			    <!-- Collection of nav links and other content for toggling -->
 			    <div id="navbarCollapse" class="collapse navbar-collapse m-r-10">
 			        <ul class="nav navbar-nav navbar-right">
-			            <li><a href="http://www.webosmotic.com/examples"><strong>Back</strong></a></li>
+			            <li><a href="http://www.webosmotic.com/examples/all"><strong>Back</strong></a></li>
 			        </ul>
 			    </div>
 			</nav>			

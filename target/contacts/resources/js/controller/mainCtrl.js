@@ -32,8 +32,8 @@ app.controller('MainCtrl', function($scope, $resource, $timeout) {
 				{
 					name : 'id',
 					displayName : '#',
-					minWidth : 50,
-					maxWidth : 50,
+					minWidth : 120,
+					maxWidth : 120,
 					enableFiltering : false,
 					enableHiding : false
 				},
@@ -133,7 +133,7 @@ app.controller('MainCtrl', function($scope, $resource, $timeout) {
                     angular.element(this).remove();
                 });
             }, 1000);
-			$scope.contacts = contacts.reverse();			
+			$scope.contacts = contacts;			
 		});
 	};
 

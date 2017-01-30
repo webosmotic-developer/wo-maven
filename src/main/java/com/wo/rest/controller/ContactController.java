@@ -29,7 +29,7 @@ public class ContactController {
 	@GET
 	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public Contact getContactById(@PathParam("id") int id) {
+	public Contact getContactById(@PathParam("id") long id) {
 		return contactService.getContact(id);
 	}
 
@@ -49,7 +49,7 @@ public class ContactController {
 	@DELETE
 	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	public void deleteContact(@PathParam("id") int id) {
+	public void deleteContact(@PathParam("id") long id) {
 		contactService.deleteContact(id);
 	}
 }

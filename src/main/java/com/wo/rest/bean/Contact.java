@@ -1,7 +1,7 @@
 package com.wo.rest.bean;
 
 public class Contact {
-	int id;
+	long id;
 	String firstName;
 	String lastName;
 	String mobile;
@@ -10,19 +10,19 @@ public class Contact {
 		super();
 	}
 	
-	public Contact(int i, String firstName, String lastName, String mobile) {
+	public Contact(long id, String firstName, String lastName, String mobile) {
 		super();
-		this.id = i;
+		this.id = id;
 		this.firstName = firstName;
 		this.lastName= lastName;
 		this.mobile= mobile;
 	}
 
-	public int getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
